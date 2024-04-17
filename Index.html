@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webku</title>
+    <link rel="stylesheet" href="Css/styles_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+    <div class="navbar">
+        <div class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-align-justify" id="iconfont"></i>
+        </div>
+        <div class="navbar-text">INI WEBKU</div>
+    </div>
+    <header>
+    <div class="sidebar" id="sidebar">
+    	
+        <h2>Isi Webku</h2>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Html/Penyakit.html">Penyakit</a></li>
+            <li><a href="Html/Riwayat.html">Riwayat Penyakit</a></li>
+            <li><a href="Html/Pengidap.html">Berapa pengidapnya</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleSidebar()">Close</button>
+    </div>
+    </header>
+    
+    <div class="content">
+    	<div id="loading-screen">
+    <div class="loader"></div>
+</div>
+    	<div class="image-container">
+        <img src="img/header.png" alt="Header Image">
+    </div>
+    	<p>
+    	Hallo, Selamat datang di Webku. disini saya akan memperlihatkan bagaimana kondisi dalam desa (nama desa), apakah disini memiliki riwayat penyakit yang cukup parah? atau malah memiliki tempat yang sehat dan lingkungan yang bersih dan sehat? Mari kita bersama mencari tau seperti apa keadaan desa (nama desa) tersebut
+    	</p>
+    	<h2>Mengapa web ini dibuat?</h2>
+    	<p>
+    		Kami ingin memperlihatkan keadaan desa (nama desa), agar memudahkan kita mengenal apa saja penyakit yang ada di desa (nama desa). Seperti itulah mengapa website ini di buat Semoga informasi kami membantuk :D
+    	</p>
+    	<table class="styled-table">
+    <caption>Presentase Penyakit yang Sering Dialami oleh Warga Desa</caption>
+    <thead>
+        <tr>
+            <th>Penyakit</th>
+            <th>Presentase (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Flu</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Demam Berdarah</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Malaria</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
+    	<h2>Daftar Kelompok</h2>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<button class="button" onclick="createBubble(event)">Press Me</button>
+    </div>
+    <script src="Js/Index.js"></script>
+</body>
+</html>
